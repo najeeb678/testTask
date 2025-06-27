@@ -24,7 +24,7 @@ const Footer = () => {
         sx={{
           color: "#888",
           borderColor: "#888",
-          width: { xs: "100%", sm: "auto" },
+          width: { xs: "100%", sm: "130px" },
           padding: "8px 16px",
           marginBottom: 2,
           borderRadius: 4,
@@ -43,7 +43,7 @@ const Footer = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          width: { xs: "100%", sm: "auto" },
+          width: { xs: "100%", sm: "130px" },
           height: "45px",
           padding: "8px 16px",
           marginBottom: 2,
