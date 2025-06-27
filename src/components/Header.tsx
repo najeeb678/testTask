@@ -1,6 +1,7 @@
 import { Box, Typography, IconButton, Avatar, Link } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import EditIcon from "@mui/icons-material/Edit";
+
+import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
 import React from "react";
 
 const Header = () => {
@@ -20,8 +21,8 @@ const Header = () => {
         <IconButton
           sx={{
             color: "white",
+
             padding: "8px",
-            "&:hover": { backgroundColor: "rgba(255, 255, 255, 0.1)" },
           }}
         >
           <ArrowBackIcon />
@@ -33,13 +34,13 @@ const Header = () => {
               variant="h6"
               sx={{
                 fontWeight: 500,
-                fontSize: "18px",
+                fontSize: { xs: "14px", md: "18px" },
                 color: "white",
               }}
             >
               Media management
             </Typography>
-            <EditIcon sx={{ fontSize: 16, color: "#888" }} />
+            <DriveFileRenameOutlineIcon sx={{ fontSize: 16, color: "#888" }} />
           </Box>
           <Typography
             variant="body2"
@@ -80,7 +81,7 @@ const Header = () => {
         </Box>
 
         <Avatar
-          src="/api/placeholder/32/32"
+          src=""
           alt="Jane Cooper"
           sx={{
             width: 32,

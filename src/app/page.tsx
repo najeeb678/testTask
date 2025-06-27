@@ -11,6 +11,9 @@ export default function Home() {
         flexDirection: "column",
         minHeight: "100vh",
         justifyContent: "space-between",
+        backgroundColor: "#171717",
+        padding: "0px 20px 60px 20px",
+   
       }}
     >
       <Header />

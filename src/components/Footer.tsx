@@ -5,79 +5,74 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "#171717",
-        padding: "24px",
-        color: "white",
+        width: "100%",
+        height: "80px",
         borderTop: "1px solid #333",
+        padding: "34px 20px",
+        backgroundColor: "#171717",
+        display: "flex",
+        justifyContent: "space-between",
+        flexDirection: {
+          xs: "column",
+          sm: "row",
+        },
+        alignItems: "center",
       }}
     >
-      <Box
+      <Button
+        variant="outlined"
         sx={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          justifyContent: "space-between",
-          alignItems: { xs: "start", md: "center" },
-          gap: 3,
+          color: "#888",
+          borderColor: "#888",
+          width: { xs: "100%", sm: "auto" },
+          padding: "8px 16px",
+          marginBottom: 2,
+          borderRadius: 4,
+          height: "45px",
+          "&:hover": { borderColor: "#6366f1", color: "#6366f1" },
         }}
       >
-        <Box>
-          <Button
-            variant="outlined"
-            sx={{
-              color: "#888",
-              borderColor: "#888",
-              width: "120px",
-              padding: "8px 16px",
-              marginBottom: 2,
-              borderRadius: 4,
-              "&:hover": { borderColor: "#6366f1", color: "#6366f1" },
-            }}
-          >
-            Back
-          </Button>
-        </Box>
+        Back
+      </Button>
 
-        <Box sx={{ textAlign: { xs: "left", md: "right" } }}>
-          <Box
-            sx={{
-              color: "#888",
-              borderColor: "#888",
-              backgroundColor: "white",
-              display: "flex",
-              justifyContent: "space-between",
-              width: "120px",
-              padding: "8px 16px",
-              marginBottom: 2,
-              borderRadius: 4,
-              "&:hover": {
-                cursor: "pointer",
-                borderColor: "#6366f1",
-                color: "#6366f1",
-              },
-            }}
-          >
-            <Typography
-              variant="body2"
-              sx={{
-                color: "#888",
-                fontSize: "14px",
-              }}
-            >
-              Next
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={{
-                color: "#888",
-                fontSize: "14px",
-              }}
-            >
-              {">>"}
-            </Typography>
-          </Box>
-        </Box>
+      <Box
+        sx={{
+          color: "#888",
+          borderColor: "#888",
+          backgroundColor: "white",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          width: { xs: "100%", sm: "auto" },
+          height: "45px",
+          padding: "8px 16px",
+          marginBottom: 2,
+          borderRadius: 4,
+          "&:hover": {
+            cursor: "pointer",
+            borderColor: "#6366f1",
+            color: "#6366f1",
+          },
+        }}
+      >
+        <Typography
+          variant="body2"
+          sx={{
+            color: "#888",
+            fontSize: "14px",
+          }}
+        >
+          Next
+        </Typography>
+        <Typography
+          variant="body2"
+          sx={{
+            color: "#888",
+            fontSize: "14px",
+          }}
+        >
+          {">>"}
+        </Typography>
       </Box>
     </Box>
   );

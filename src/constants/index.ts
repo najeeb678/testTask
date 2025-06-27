@@ -25,7 +25,7 @@ export const TOPICS: TopicOption[] = [
   { id: "facts", label: "Facts", value: "facts" },
 ];
 
-export const DISCUSSION_TITLES: Record<string, DiscussionTitle[]> = {
+export const DISCUSSION_TITLES: any = {
   fun: [
     { id: "board-games", title: "Board games revival", category: "fun" },
     { id: "comedy-trends", title: "Comedy trends", category: "fun" },
